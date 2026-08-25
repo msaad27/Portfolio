@@ -1,11 +1,14 @@
 {
     "name": "saad-portfolio-web",
+    "homepage": "https://msaad27.github.io/Portfolio",
     "version": "1.0.0",
     "private": true,
     "scripts": {
         "dev": "vite",
         "build": "vite build",
-        "preview": "vite preview --port 4173"
+        "preview": "vite preview --port 4173",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d dist"
     },
     "dependencies": {
         "react": "^18.2.0",
